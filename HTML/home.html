@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>茶道</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
-<body>
+<body> 
+<div class="sp_menu">
+    
+    <div class="navToggle">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      
+      <nav class="globalMenuSp">
+          <ul>
+              <li><a href="history.html">歴史</a></li>
+              <li><a href="ryuha.html">流派</a></li>
+              <li><a href="master.html">講師</a></li>
+              <li><a href="lessons.html">稽古予約</a></li>
+              <li><a href="contact.html">お問合せ</a></li>
+          </ul>
+      </nav>
+</div>
+
     <h1>茶道</h1>
-    <h2>初めての茶道</h2>
+    <p>茶道とは心を落ち着かせながらお茶をたて、客人に振る舞う儀式。おもてなしの精神や侘び寂びなど、美しい心得を感じられる日本の伝統文化です。</p>
+    
+    <footer>
+        <p><small>&copy chadou All Rights Reserved.</small></p>
+     </footer>
+<script>
+    $(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+            $('body').addClass('overflowHidden');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+            $('body').removeClass('overflowHidden');
+        }
+    });
+});
+</script>
+    
 </body>
 </html>
