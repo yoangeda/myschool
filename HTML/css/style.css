@@ -106,8 +106,7 @@ nav.globalMenuSp .menuHeader {
   height: 51px;
   cursor: pointer;
   z-index: 3;
-  background: #666;
-  border: 1px solid #fff;
+  
   text-align: center;
 }
 
@@ -288,7 +287,7 @@ nav.globalMenuSp .menuHeader {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 280px;
-  display: block;
+  display: block; 
   letter-spacing: 0.05em;
   background: #02966e;
   color: #fff;
