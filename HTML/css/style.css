@@ -357,7 +357,7 @@ div.Form {
 
 div.home {
   margin-top: 20px;
-  
+  margin-bottom: 20px;
 }
 /*パソコン・スマホ共通のCSS*/
 #PageTopBtn {
@@ -403,3 +403,89 @@ div.home {
   padding: 8px 0;
 }
 }
+
+
+/* ボタン全体 */
+.flowbtn17{
+  border-radius:50%;
+  position:relative;
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  font-size:15px;
+  text-decoration:none;
+  transition:.5s;
+  background-color:rgb(91, 90, 90);
+  color:#fff;
+  }
+  /* ボタンマウスホバー時のテキスト指定 */
+  .flowbtn17:hover{
+  text-decoration:none;
+  }
+  /* アイコンをど真ん中に */
+  .flowbtn17 i{
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  }
+  /* Twitterマウスホバー時 */
+  .flowbtn17.fl_tw2:hover{
+  background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+  }
+  /* Instagramマウスホバー時 */
+  .flowbtn17.insta_btn2:hover{
+  background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;		
+  }
+  /* Facebookマウスホバー時 */
+  .flowbtn17.fl_fb2:hover{
+  background:-webkit-linear-gradient(top, #5c80c6 0%, #34528c 74%);	
+  background:linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
+  }
+  /* Feedlyマウスホバー時 */
+  .flowbtn17.fl_fd2:hover{
+  background:linear-gradient(135deg, #b1ea4d 0%,#459522 100%);
+  font-size:28px;
+  }
+  /* Pocketマウスホバー時 */
+  .flowbtn17.fl_pk2:hover{
+  background:linear-gradient(135deg, #f36265 0%,#dd4f68 100%);
+  }
+  /* はてブアイコンのサイズ */
+  .flowbtn17.fl_hb2{
+  font-size:25px;
+  }
+  /* はてブマウスホバー時 */
+  .flowbtn17.fl_hb2:hover{
+  background:-webkit-linear-gradient(top, #1fbccd 0%, #1c91d4 84%);	
+  background:linear-gradient(to bottom, #1fbccd 0%, #1c91d4 84%);
+  }
+  /* YouTubeマウスホバー時 */
+  .flowbtn17.fl_yu2:hover{
+  background:linear-gradient(135deg, #f5515f 0%,#c9293c 100%);
+  }
+  /* LINEマウスホバー時 */
+  .flowbtn17.fl_li2:hover{
+  background: linear-gradient(135deg, #3a9278 0%,#00c300 100%);
+  }
+  /* お問い合わせマウスホバー時 */
+  .flowbtn17.fl_ma2:hover{
+  background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+  }
+  /* ulタグの内側余白を０にする */
+  ul.snsbtniti2{
+    padding:0!important;
+    }
+  /* ボタン全体の位置 */
+  .snsbtniti2{
+    display:flex;
+    flex-flow:row wrap;
+    }
+  /* ボタン同士の余白 */
+  .snsbtniti2 li{
+    flex:0 0 48%;
+    text-align:center !important;
+  }
