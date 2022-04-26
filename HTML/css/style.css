@@ -1,25 +1,22 @@
 body {
     background-size: contain;
-    background-color: rgb(247, 241, 234);
+    background-color: rgb(248, 235, 221);
     font-family: Lyon Display Web,Times New Roman,serif;
     text-align: center;
 }
 footer { 
   text-align: center; 
-  padding: 40px 0; 
+  padding: 0px 0; 
   margin: 0;
  }
 
-.jumbotron {
-  background-image: url(../images/master.jpg);
-}  
 
 .top-wrapper {
-  padding: 180px 0 100px 0 ;
+  padding: 300px 0 200px 0 ;
   background-image: url(../images/mains.jpg); 
   background-position: center;
   background-size: auto;
-  color: rgb(248, 243, 243);
+  color: white;
   font-weight: bold;
   text-align: center;
   background-repeat: no-repeat;
@@ -48,6 +45,7 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 
 /* グルーバルメニュー */
 nav.globalMenuSp {
@@ -274,7 +272,7 @@ nav.globalMenuSp .menuHeader {
   margin-left: 40px;
   padding-left: 1em;
   padding-right: 1em;
-  height: 216px;
+  height: 130px;
   flex: 1;
   width: 100%;
   max-width: 410px;
@@ -292,7 +290,7 @@ nav.globalMenuSp .menuHeader {
   }
   .Form-Btn {
   border-radius: 6px;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
@@ -358,6 +356,50 @@ div.Form {
 }
 
 div.home {
-  margin-top: 50px;
+  margin-top: 20px;
   
+}
+/*パソコン・スマホ共通のCSS*/
+#PageTopBtn {
+  position: fixed; /*ボタンの配置場所を固定*/
+  bottom: -10px; /*下からのボタンの配置場所を指定*/
+  right: 10px; /*右からのボタンの配置場所を指定*/
+}
+#PageTopBtn a {
+  display: block; /*配置の調整*/
+  text-decoration: none; /*文字の下線を消す*/
+  color: #fff; /*文字の色*/
+  background: #79d2bb; /*ボタンの背景色*/
+  text-align: center; /*文字を中央に配置*/
+  border-radius: 50%; /*ボタンの角を少し丸くする*/
+  outline: none; /*クリックしたときの黒い枠を消す*/
+}
+#PageTopBtn a:hover {
+  text-decoration: none; 
+  background: #488048; /*マウスオーバー時の背景色*/
+}
+
+
+/*パソコンで表示する場合のCSS*/
+@media (min-width: 768px) {
+#PageTopBtn {
+  font-size: 25px; /*文字のサイズ*/
+}
+#PageTopBtn a {
+  width: 50px; /*ボタンの幅*/
+  height: 50px; /*ボタンの高さ*/
+  padding: 5px 0; /*文字の配置場所の調整*/
+}
+}
+
+/*スマホで表示する場合のCSS*/
+@media (max-width: 767px) {
+#PageTopBtn {
+  font-size: 20px;
+}
+#PageTopBtn a {
+  width: 50px;
+  height: 50px;
+  padding: 8px 0;
+}
 }
